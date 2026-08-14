@@ -101,3 +101,8 @@ Image = blueprint/template
 Container = running instance created from that image
 
 Redis = the actual application/process running inside the container.
+
+
+- Dockerfile & docker-compose.yaml
+
+Dockerfile describes how to package your app; Compose describes how multiple containers work together.

@@ -3,10 +3,12 @@ const app = express();
 const Redis = require('ioredis');
 
 const PORT = process.env.PORT || 8080;
+const REDIS_HOST = process.env.REDIS_HOST || 'localhost';
+const REDIS_PORT = process.env.REDIS_PORT || 6379;
 
 app.use(express.json());
 
-const redis = new Redis('redis://localhost:6379');
+const redis = new Redis(`redis://${REDIS_HOST}:${REDIS_PORT}`);
 
 app.get('/', (req, res) => {
   res.send('Welcome to xShopDB!');
