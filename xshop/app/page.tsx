@@ -13,6 +13,10 @@ export default function Home() {
       <button onClick={() => { router.push('/login') }}>LOGIN</button>
       <br />
       <Link href="/shop">Go to Shop</Link>
+
+      <h1>Container Setup Success</h1>
+
+      <h2>Container Updated - 2</h2>
     </div>
   );
 }

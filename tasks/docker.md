@@ -1,3 +1,15 @@
+- TASK
+1. Understand container networking, environment variables, volumes, health checks.
+
+2. Move your images to:
+Docker
+   ↓
+Amazon ECR
+   ↓
+EKS
+
+One caveat: I wouldn't necessarily run MongoDB or Redis inside EKS in a production architecture. For the demo, Docker is great. In AWS, managed services such as ElastiCache and MongoDB Atlas are usually more appropriate.
+
 - run Redis server seperately with Docker for local development
 
 docker run --name redis -p 6379:6379 -d redis
