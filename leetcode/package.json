@@ -1,0 +1,19 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "leetcode practice for typescript",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "test": "tsx src/test.ts",
+    "set": "tsx src/set.ts",
+    "format": "prettier --write src/",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.25",
+    "tsx": "^4.23.12",
+    "typescript": "^5.0.0"
+  }
+}
